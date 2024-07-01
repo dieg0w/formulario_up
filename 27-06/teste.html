@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2.css">
+    <title>Questionário SNUL</title>
+</head>
+<body>
+    <h1 class="L1">Pesquisa do SNUL</h1>
+
+    <form>
+        <div class="form-control">
+            <label for="nome">Digite seu nome completo:</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+        </div> 
+        
+        <div class="form-control">
+            <label for="email">Digite seu email:</label>
+            <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required>
+        </div> 
+
+        <div class="form-control">
+            <label for="senha">Digite sua Senha:</label>
+            <input type="text" name="senha" id="senha" placeholder="senha12345" required>
+        </div>
+        
+        <div class="form-control">
+            <label for="data">Selecione a sua data de nascimento:</label>
+            <input type="date" id="data" name="data" required>
+        </div> 
+
+
+        <div class="form-control">
+            <label for="numero">Digite seu Número de telefone:</label>
+            <input type="tel" name="numero" id="numero" placeholder="+55 00 0000-0000" required>
+        </div> 
+
+        <fieldset>
+            <legend>Selecione os bens que possui:</legend>
+            <div>
+                <label for="carro">Possui carro:</label>
+                <select name="carro" id="carro">
+                    <option value="carro1">Possui um carro</option>
+                    <option value="carros">Possui dois ou mais carros</option>
+                    <option value="nenhumCarro">Não possui nenhum carro</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="geladeira">Possui geladeira:</label>
+                <select name="geladeira" id="geladeira">
+                    <option value="geladeira1">Possui uma geladeira</option>
+                    <option value="geladeiras">Possui duas ou mais geladeiras</option>
+                    <option value="nenhumaGeladeira">Não possui nenhuma geladeira</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="garagem">Possui garagem:</label>
+                <select name="geladeira" id="geladeira">
+                    <option value="garagem1">Possui uma garagem</option>
+                    <option value="garagens">Possui duas garagens ou mais</option>
+                    <option value="nenhumaGaragem">Não possui nenhuma garagem</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Qual é o seu nível de escolaridade?</legend>
+            <div>
+                <input type="radio" id="fundamental" name="escolaridade" value="fundamental" required>
+                <label for="fundamental">Fundamental</label>
+            </div>
+            <div>
+                <input type="radio" id="medio" name="escolaridade" value="medio">
+                <label for="medio">Médio</label>
+            </div>
+            <div>
+                <input type="radio" id="superior" name="escolaridade" value="superior">
+                <label for="superior">Superior</label>
+            </div>
+            <div>
+                <input type="radio" id="pos" name="escolaridade" value="pos">
+                <label for="pos">Pós-graduação</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Qual é a sua renda mensal?</legend>
+            <div>
+                <input type="radio" id="faixa1" name="renda" value="ate1sm" required>
+                <label for="faixa1">Até 1 salário mínimo</label>
+            </div>
+            <div>
+                <input type="radio" id="faixa2" name="renda" value="1a3sm">
+                <label for="faixa2">De 1 a 3 salários mínimos</label>
+            </div>
+            <div>
+                <input type="radio" id="faixa3" name="renda" value="3a5sm">
+                <label for="faixa3">De 3 a 5 salários mínimos</label>
+            </div>
+            <div>
+                <input type="radio" id="faixa4" name="renda" value="5mais">
+                <label for="faixa4">Mais de 5 salários mínimos</label>
+            </div>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
